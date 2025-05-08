@@ -20,6 +20,9 @@ A Django REST Framework API for querying house listings data with advanced filte
 - Error handling
 - CORS support
 - OpenAPI/Swagger documentation
+- Django admin interface
+- Environment variable support via `.env`
+- Comprehensive test suite
 
 ## Prerequisites
 
@@ -76,6 +79,12 @@ python manage.py migrate
 ```bash
 python manage.py loaddata sample-data/houses.json
 ```
+
+7. Create a Django superuser:
+```bash
+python manage.py createsuperuser
+```
+Follow the prompts to set up your admin username, email, and password.
 
 ## Running the Server
 
@@ -223,4 +232,28 @@ For production deployment:
 ## Contributing
 
 [Your Contributing Guidelines Here]
+
+## Accessing Django Admin
+- Visit: [http://127.0.0.1:8000/admin/](http://127.0.0.1:8000/admin/)
+- Log in with the superuser credentials you created above.
+- You can manage House listings and users from the admin interface.
+
+## Other Useful Commands
+- **Check for missing migrations:**
+  ```bash
+  python manage.py makemigrations --check
+  ```
+- **Create new migrations:**
+  ```bash
+  python manage.py makemigrations
+  ```
+- **Collect static files (for production):**
+  ```bash
+  python manage.py collectstatic
+  ```
+
+## Troubleshooting
+- If you encounter issues with environment variables, ensure your `.env` file is present and correctly formatted.
+- If you see `ModuleNotFoundError`, make sure all dependencies are installed and your virtual environment is activated.
+- For database issues, try deleting `db.sqlite3` and running migrations again.
 
