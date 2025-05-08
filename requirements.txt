@@ -1,0 +1,7 @@
+django >= 3.2, < 3.3
+djangorestframework >= 3.12, < 3.13
+django-filter >= 21.0, < 22.0
+pytest >= 7.0.0
+pytest-django >= 4.5.0
+drf-spectacular >= 0.26.0
+python-dotenv >= 1.0.0

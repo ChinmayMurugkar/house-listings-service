@@ -1,0 +1,6 @@
+Django==3.2.4
+djangorestframework==3.12.4
+django-filter==21.1
+drf-spectacular==0.22.1
+python-dotenv==0.19.2
+django-cors-headers==3.10.1 
